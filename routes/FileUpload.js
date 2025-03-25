@@ -6,6 +6,10 @@ const {imageUpload, videoUpload, imageReducerUpload, localFileUpload} = require(
 
 // api routes
 router.post("/localFileUpload", localFileUpload);
+router.post("/imageUpload", imageUpload);
+// videoUpload
+router.post("/videoUpload", videoUpload);
+router.post("/imageReducerUpload", imageReducerUpload);
 
 module.exports = router;
 // ye file upload karne ka api h jo local file ko server par upload karta h

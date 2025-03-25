@@ -14,7 +14,11 @@ app.use(express.json());
 const fileupload = require("express-fileupload"); // ye server par upload karta h
 
 // agar ham file upload me kuch flag send karte to... tempFilePath me kuch value aata
-app.use(fileupload());
+app.use(fileupload({
+    useTempFiles : true,
+    tempFileDir : '/tmp/'
+}));
+
 
 
 // db  se connect karna
